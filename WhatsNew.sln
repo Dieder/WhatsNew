@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31815.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatsNew", "WhatsNew\WhatsNew.csproj", "{59FD6E4C-A341-4E61-92D3-B3651968A827}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "TestProject1\TestProject1.csproj", "{672151BF-584F-45DC-A892-46C09BCC73DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhantsNewTests", "TestProject1\WhantsNewTests.csproj", "{672151BF-584F-45DC-A892-46C09BCC73DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSeekApi", "JobSeekApi\JobSeekApi.csproj", "{AE485B8B-DEFF-494D-96CB-5780FF5BDAAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobSeekApi", "JobSeekApi\JobSeekApi.csproj", "{AE485B8B-DEFF-494D-96CB-5780FF5BDAAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
