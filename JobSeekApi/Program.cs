@@ -32,7 +32,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
 app.MapGet("/jobs", async ( DatabaseContext db) =>
 {
     return await db.JobDetails.ToListAsync();
