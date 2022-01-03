@@ -15,7 +15,7 @@ public class PatternMatchingTypeTests
     [Fact]
     public void TestPatternMatchingTypes()
     {
-        PatternMarchingType patternMatchinType = new(output);
+        PatternMatchingType patternMatchinType = new(output);
 
         var employee = new Employee { FirstName = "Ella", LastName = "Johnson", Addressing = "Miss." };
         patternMatchinType.GetVistorType(employee);

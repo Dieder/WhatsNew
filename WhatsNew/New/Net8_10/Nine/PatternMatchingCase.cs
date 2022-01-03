@@ -14,17 +14,16 @@ public class PatternMatchingCase
         switch (i)
         {
             case int n when n > (int)20:
-                output.WriteLine("lower than n");
+                output.WriteLine("I is integer and greater than n");
                 break;
             case Car c2:
-                output.WriteLine($"Type is car with nr of wheels {c2.Wheels} ");
+                output.WriteLine($"I of assignable from car with property nr of wheels {c2.Wheels} ");
                 break;
             case null:
                 output.WriteLine("Value is null");
                 break;
-
             case var j when (j.Equals(10)):
-                output.WriteLine("Yes you picked 10");
+                output.WriteLine("Yes, this variable equals int 10");
                 break;
             default:
                 break;

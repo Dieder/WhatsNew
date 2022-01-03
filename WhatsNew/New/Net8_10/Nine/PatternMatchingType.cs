@@ -1,9 +1,9 @@
 ﻿namespace WhatsNew.New.Net8_10;
 
-public class PatternMarchingType
+public class PatternMatchingType
 {
     private readonly IOutput output;
-    public PatternMarchingType(IOutput output)
+    public PatternMatchingType(IOutput output)
     {
         this.output= output;
     }
