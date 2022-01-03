@@ -2,7 +2,7 @@
 
 public record PersonRecord(string FirstName, string LastName, string? MiddleName = null) : IPersonal
 {
-    public Address Address { get; set; }
+    public Address? Address { get; set; }
     public int WorkYears { get; set; }
 }
 
