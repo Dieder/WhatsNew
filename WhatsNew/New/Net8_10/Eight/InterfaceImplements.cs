@@ -32,6 +32,23 @@ public interface IPersonal
     }
 }
 
+
+public class Visitor : IPersonal
+{
+    public int WorkYears { get; init; } = 0; // The init is set once but not set more then once initializer
+    public string FirstName { get; init; } = string.Empty; // Firstname could never be accepted to be null
+    public string LastName { get; init; } = string.Empty;
+    public string? MiddleName { get; init; } // If not initialized make prop nullable. Its not said middle name may be nullable but can be expected to be nullable
+}
+
+public class Applicant : IPersonal
+{
+    public int WorkYears { get; init; } = 0;
+    public string FirstName { get; init; } = string.Empty;
+    public string LastName { get; init; } = string.Empty;
+    public string? MiddleName { get; init; }
+}
+
 public class Employee : IPersonal
 {
     public string Addressing { get; init; } = "Mr";
@@ -43,23 +60,6 @@ public class Employee : IPersonal
     public Address? WorkAddress { get; set; }
 
     public virtual IPersonal Partner() => new Visitor { FirstName = "Unknown", LastName = "Unknown" };
-}
-
-
-public class Visitor : IPersonal
-{
-    public int WorkYears { get; private init; } = 0; // The init is set once but not set more then once initializer
-    public string FirstName { get; init; } = string.Empty; // Firstname could never be accepted to be null
-    public string LastName { get; init; } = string.Empty;
-    public string? MiddleName { get; init; } // If not initialized make prop nullable. Its not said middle name may be nullable but can be expected to be nullable
-}
-
-public class Applicant : IPersonal
-{
-    public int WorkYears { get; private init; } = 0;
-    public string FirstName { get; init; } = string.Empty;
-    public string LastName { get; init; } = string.Empty;
-    public string? MiddleName { get; init; }
 }
 
 public static class Organisation
