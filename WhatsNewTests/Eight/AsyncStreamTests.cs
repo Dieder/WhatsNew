@@ -10,7 +10,7 @@ public class AsyncStreamTests
         output = new TestOutput(outputHelper);
     }
 
-  
+
     [Fact]
     public async Task GetResultFromStream()
     {

@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace WhatsNew.New.Net8_10
+﻿namespace WhatsNew.New.Net8_10
 {
     public class CallerExpression
     {
@@ -10,6 +8,6 @@ namespace WhatsNew.New.Net8_10
                 throw new ArgumentNullException(expression);
             return value;
         }
-        
+
     }
 }

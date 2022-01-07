@@ -16,7 +16,7 @@ public class CallerExpressionTests
     public void TestCallerExpressionTests()
     {
         var personX = new PersonRecord("Dieder", "Timmerman");
-        var ex = Assert.Throws<ArgumentNullException>( () => CallerExpression.EnsureArgumentIsNotNull(personX.Address));
+        var ex = Assert.Throws<ArgumentNullException>(() => CallerExpression.EnsureArgumentIsNotNull(personX.Address));
         output.WriteLine(ex.Message);
     }
 }

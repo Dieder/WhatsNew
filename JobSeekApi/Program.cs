@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
 
@@ -32,7 +31,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/jobs", async ( DatabaseContext db) =>
+app.MapGet("/jobs", async (DatabaseContext db) =>
 {
     return await db.JobDetails.ToListAsync();
 })
@@ -40,7 +39,7 @@ app.MapGet("/jobs", async ( DatabaseContext db) =>
     .Produces<JobDetails>(200)
     .WithTags(jobsTag);
 
-app.MapGet("/jobs/{id}", async ( DatabaseContext db, string id) =>
+app.MapGet("/jobs/{id}", async (DatabaseContext db, string id) =>
 {
     return await db.JobDetails.FindAsync(id) switch
     {
@@ -49,10 +48,11 @@ app.MapGet("/jobs/{id}", async ( DatabaseContext db, string id) =>
     };
 })
     .Produces<JobDetails>((int)HttpStatusCode.OK)
-    .Produces((int) HttpStatusCode.NotFound)
+    .Produces((int)HttpStatusCode.NotFound)
     .WithTags(jobsTag);
 
-app.MapPost("/jobs", async (DatabaseContext db, JobDetails job) => {
+app.MapPost("/jobs", async (DatabaseContext db, JobDetails job) =>
+{
     ArgumentNullException.ThrowIfNull(job);
     await db.JobDetails.AddAsync(job);
     await db.SaveChangesAsync();
@@ -75,7 +75,7 @@ app.MapPut("/jobs/{id}", async (DatabaseContext db, string id, JobDetails job) =
     return Results.Ok();
 })
     .Produces((int)HttpStatusCode.OK)
-    .Produces((int) HttpStatusCode.BadRequest)
+    .Produces((int)HttpStatusCode.BadRequest)
     .WithTags(jobsTag);
 
 app.MapDelete("/jobs/{id}", async (DatabaseContext db, string id) =>
@@ -88,8 +88,8 @@ app.MapDelete("/jobs/{id}", async (DatabaseContext db, string id) =>
     await db.SaveChangesAsync();
     return Results.Ok();
 })
-    .Produces((int) HttpStatusCode.OK)
-    .Produces((int) HttpStatusCode.NotFound)
+    .Produces((int)HttpStatusCode.OK)
+    .Produces((int)HttpStatusCode.NotFound)
     .WithTags(jobsTag);
 
 app.Run();

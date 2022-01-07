@@ -4,7 +4,7 @@ namespace TestProject1;
 
 public class PatterMatchingCaseTests
 {
-    private readonly TestOutput output;    
+    private readonly TestOutput output;
 
     public PatterMatchingCaseTests(ITestOutputHelper outputHelper)
     {
@@ -13,7 +13,7 @@ public class PatterMatchingCaseTests
 
     [Fact]
     public void PatenMatchTestTypes()
-    {     
+    {
         PatternMatchingCase patternMatchingCase = new(output);
         var carObject = new Car { Wheels = 4 };
 

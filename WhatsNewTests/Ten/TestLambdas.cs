@@ -1,5 +1,3 @@
-using Xunit;
-
 namespace TestProject1
 {
     public class TestLambdas
@@ -10,7 +8,7 @@ namespace TestProject1
             var isEven = (int n) => n % 2 == 0;
             var isEvenString = string (int n) => (n % 2 == 0).ToString();
 
-            var AddOne = (ref int n) => n ++;
+            var AddOne = (ref int n) => n++;
 
             Assert.False(isEven(3));
             Assert.True(isEven(4));

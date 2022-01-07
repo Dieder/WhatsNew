@@ -3,13 +3,14 @@ namespace WhatsNew.New.Net8_10;
 
 public class PatternMatchingCase
 {
-    private readonly IOutput output;    
+    private readonly IOutput output;
     public PatternMatchingCase(IOutput output)
     {
         this.output = output;
     }
-    
-    public void TestMyI(object i)    {
+
+    public void TestMyI(object i)
+    {
 
         switch (i)
         {

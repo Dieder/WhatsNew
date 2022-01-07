@@ -14,7 +14,7 @@ public class InterfaceImplementsTests
     [Fact]
     public void CreateEmployees()
     {
-        
+
         output.WriteLine("The following persons are known:");
         var entranceCheckList = Organisation.CreateCheckList();
 

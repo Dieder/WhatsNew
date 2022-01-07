@@ -1,7 +1,7 @@
 ﻿
 namespace WhatsNew.New.Net8_10;
 
-public interface IOutput 
+public interface IOutput
 {
     void WriteLine(string message);
 

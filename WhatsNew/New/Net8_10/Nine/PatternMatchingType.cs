@@ -5,7 +5,7 @@ public class PatternMatchingType
     private readonly IOutput output;
     public PatternMatchingType(IOutput output)
     {
-        this.output= output;
+        this.output = output;
     }
 
     public void GetVistorType(IPersonal personal)
@@ -25,7 +25,7 @@ public class PatternMatchingType
         }
     }
 
-   
+
 
 }
 

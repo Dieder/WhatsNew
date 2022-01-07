@@ -52,7 +52,7 @@ public class Applicant : IPersonal
 public class Employee : IPersonal
 {
     public string Addressing { get; init; } = "Mr";
-    public string FullName => $"{Addressing}{ MiddleName ?? MiddleName : String.Empty} {LastName}"; //override the interface get implemntation FullName
+    public string FullName => $"{Addressing}{ MiddleName ?? MiddleName: String.Empty} {LastName}"; //override the interface get implemntation FullName
     public int WorkYears { get; set; } = 0;
     public string FirstName { get; init; } = string.Empty;
     public string LastName { get; init; } = string.Empty;
