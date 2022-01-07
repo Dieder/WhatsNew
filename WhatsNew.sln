@@ -9,12 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobSeekApi", "JobSeekApi\Jo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhantsNewTests", "WhatsNewTests\WhantsNewTests.csproj", "{A3E632F8-D11F-4108-BA16-4BCC1F018D3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rubicon.CareerMatch.Data", "..\CareerMatchingApi.Data\Rubicon.CareerMatch.Data.csproj", "{DA0A3F36-42FB-427D-948C-873C74D370B2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rubicon.Google.TalentServices", "..\Rubicon.Google.Talent\Rubicon.Google.TalentServices.csproj", "{00AEE460-959E-4070-9190-639E35EC6C3C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rubicon.AzureFunctions.Common.Http", "..\Rubicon.Azure.Common.Http\Rubicon.AzureFunctions.Common.Http.csproj", "{FCB7E0B8-5939-405C-B286-B735B554A586}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,18 +27,6 @@ Global
 		{A3E632F8-D11F-4108-BA16-4BCC1F018D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E632F8-D11F-4108-BA16-4BCC1F018D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E632F8-D11F-4108-BA16-4BCC1F018D3B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA0A3F36-42FB-427D-948C-873C74D370B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA0A3F36-42FB-427D-948C-873C74D370B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA0A3F36-42FB-427D-948C-873C74D370B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA0A3F36-42FB-427D-948C-873C74D370B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00AEE460-959E-4070-9190-639E35EC6C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00AEE460-959E-4070-9190-639E35EC6C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00AEE460-959E-4070-9190-639E35EC6C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00AEE460-959E-4070-9190-639E35EC6C3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FCB7E0B8-5939-405C-B286-B735B554A586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCB7E0B8-5939-405C-B286-B735B554A586}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCB7E0B8-5939-405C-B286-B735B554A586}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCB7E0B8-5939-405C-B286-B735B554A586}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
