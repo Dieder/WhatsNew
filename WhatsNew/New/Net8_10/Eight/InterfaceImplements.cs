@@ -1,4 +1,6 @@
-﻿namespace WhatsNew.New.Net8_10;
+﻿using WhatsNew.New.Net8_10.Nine;
+
+namespace WhatsNew.New.Net8_10;
 
 public interface IPersonal
 {
@@ -76,14 +78,20 @@ public static class Organisation
             Country = "Netherlands",
             Zipcode = "3832RC"
         };
+        var jacob = new Employee { Addressing = "Mr", FirstName = "Jacob", LastName = "Parkside", WorkYears = 5 };
+        var jennifer = new Boss { Addressing = "Mrs",  FirstName = "Jennifer", LastName = "Boss" };
+        jennifer.SetPartner(jacob);
 
         IList<IPersonal> entranceCheckList = new List<IPersonal> {
+            jacob,
             new Employee { Addressing = "Mr", FirstName = "Jacob", LastName = "Parkside", WorkYears = 5 },
             new Employee { Addressing = "Mr", FirstName = "Mac", LastName = "Johnson", WorkYears = 14 },
             new Employee { Addressing = "Mrs.", FirstName = "Jean", MiddleName="the", LastName = "Great", WorkYears =10, WorkAddress = rubiconAddress },
             new Employee { Addressing = "Mrs.", FirstName = "Ellis", MiddleName="", LastName = "Gillmore", WorkYears =10, WorkAddress = rubiconAddress },
             new Applicant { FirstName = "Elya", LastName ="Hanson" },
-            new Visitor { FirstName = "Daphne", LastName ="Schippers" }
+            new Visitor { FirstName = "Daphne", LastName ="Schippers" },
+            jennifer
+            
         };
 
         return entranceCheckList;
