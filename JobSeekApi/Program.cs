@@ -4,7 +4,7 @@ using System.Net;
 var builder = WebApplication.CreateBuilder(args);
 const string jobsTag = "jobs";
 
-//Swaagger
+//Swagger
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -56,7 +56,7 @@ app.MapPost("/jobs", async (DatabaseContext db, JobDetails job) =>
     ArgumentNullException.ThrowIfNull(job);
     await db.JobDetails.AddAsync(job);
     await db.SaveChangesAsync();
-    return Results.Created("/jobs/{job.Id}", job);
+    return Results.Created($"/jobs/{job.Id}", job);
 })
     .Produces((int)HttpStatusCode.Created)
     .WithTags(jobsTag);
