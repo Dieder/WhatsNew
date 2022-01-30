@@ -9,16 +9,16 @@ public class CovariantReturnTypeTests
     {
         var entranceCheckList = Organisation.CreateCheckList();
 
-        foreach (var visitor in entranceCheckList)
+        foreach (var todaysVisitor in entranceCheckList)
         {
 
-            if (visitor is Employee employee)
+            if (todaysVisitor is Employee employee)
             {
                 var visitorPartner = employee.Partner();
                 Assert.IsAssignableFrom<IPersonal>(visitorPartner);
             }
 
-            if (visitor is Boss boss) // class boss is derived from employee!
+            if (todaysVisitor is Boss boss) // class boss is derived from employee!
             {
                 var employeePartner = boss.Partner(); //boss has a different return type however
                 Assert.IsAssignableFrom<Employee>(employeePartner);

@@ -14,16 +14,16 @@ public class PatterMatchingCaseTests
     [Fact]
     public void PatenMatchTestTypes()
     {
-        PatternMatchingCase patternMatchingCase = new(output);
-        var carObject = new Car { Wheels = 4 };
+        PatternMatchingCase patternMatchingCase = new(output);        
 
         output.WriteLine("Test with number > 20");
         patternMatchingCase.TestAnObject(21); //n
 
         output.WriteLine("Test with car object");
+        var carObject = new Car { Wheels = 4 };
         patternMatchingCase.TestAnObject(carObject);
 
-        output.WriteLine("Test with number equeals20");
+        output.WriteLine("Test with number equals 10");
         patternMatchingCase.TestAnObject(10); //J
 
         output.WriteLine("Test with null");
