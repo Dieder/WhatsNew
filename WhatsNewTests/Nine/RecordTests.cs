@@ -15,7 +15,7 @@ public class RecordTests
     public void AreTheyTheSame()
     {
         // using three paramaters
-        var Nienke = new PersonRecord("Niekde", "Waal", "De");
+        var nienke = new PersonRecord("Nienke", "Waal", "De");
 
         // Peter == Peter 2
         var peter1 = new PersonRecord("Peter", "Pan");
