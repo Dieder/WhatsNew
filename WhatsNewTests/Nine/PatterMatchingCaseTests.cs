@@ -18,16 +18,16 @@ public class PatterMatchingCaseTests
         var carObject = new Car { Wheels = 4 };
 
         output.WriteLine("Test with number > 20");
-        patternMatchingCase.TestMyI(21); //n
+        patternMatchingCase.TestAnObject(21); //n
 
         output.WriteLine("Test with car object");
-        patternMatchingCase.TestMyI(carObject);
+        patternMatchingCase.TestAnObject(carObject);
 
         output.WriteLine("Test with number equeals20");
-        patternMatchingCase.TestMyI(10); //J
+        patternMatchingCase.TestAnObject(10); //J
 
         output.WriteLine("Test with null");
-        patternMatchingCase.TestMyI(null);
+        patternMatchingCase.TestAnObject(null);
     }
 
 }

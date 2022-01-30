@@ -9,13 +9,13 @@ public class PatternMatchingCase
         this.output = output;
     }
 
-    public void TestMyI(object i)
+    public void TestAnObject(object i)
     {
 
         switch (i)
         {
             case int n when n > (int)20:
-                output.WriteLine("I is integer and greater than n");
+                output.WriteLine("I is integer and greater than 20");
                 break;
             case Car c2:
                 output.WriteLine($"I of assignable from car with property nr of wheels {c2.Wheels} ");
