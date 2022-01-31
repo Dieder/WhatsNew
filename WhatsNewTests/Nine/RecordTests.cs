@@ -32,7 +32,7 @@ public class RecordTests
 
         if (jane != tarzan)
         {
-            output.WriteLine("Peter is married with Jane and they are different.");
+            output.WriteLine("Tarzan is married with Jane and they are different.");
         }
 
         // Defined by constructor and proeprties
@@ -47,7 +47,7 @@ public class RecordTests
             Country = "Netherlands",
             Zipcode = "3832RC"
         };
-               
+         
 
         personX.Address = adres;
 
