@@ -83,8 +83,7 @@ public static class Organisation
         jennifer.SetPartner(jacob);
 
         IList<IPersonal> entranceCheckList = new List<IPersonal> {
-            jacob,
-            new Employee { Addressing = "Mr", FirstName = "Jacob", LastName = "Parkside", WorkYears = 5 },
+            jacob,            
             new Employee { Addressing = "Mr", FirstName = "Mac", LastName = "Johnson", WorkYears = 14 },
             new Employee { Addressing = "Mrs.", FirstName = "Jean", MiddleName="the", LastName = "Great", WorkYears =10, WorkAddress = rubiconAddress },
             new Employee { Addressing = "Mrs.", FirstName = "Ellis", MiddleName="", LastName = "Gillmore", WorkYears =10, WorkAddress = rubiconAddress },

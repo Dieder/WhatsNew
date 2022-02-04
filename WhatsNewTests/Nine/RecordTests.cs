@@ -1,6 +1,4 @@
-﻿using Xunit.Abstractions;
-
-namespace TestProject1.Nine;
+﻿namespace TestProject1.Nine;
 
 public class RecordTests
 {
@@ -47,7 +45,6 @@ public class RecordTests
             Country = "Netherlands",
             Zipcode = "3832RC"
         };
-         
 
         personX.Address = adres;
 

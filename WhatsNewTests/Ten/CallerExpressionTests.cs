@@ -1,4 +1,4 @@
-﻿using Xunit.Abstractions;
+﻿
 
 namespace TestProject1.Ten;
 
@@ -16,6 +16,9 @@ public class CallerExpressionTests
     public void TestCallerExpressionTests()
     {
         var personX = new PersonRecord("Dieder", "Timmerman");
+
+        Assert.Throws<ArgumentNullException>( () => ArgumentNullException.ThrowIfNull(personX.Address));
+
         var ex = Assert.Throws<ArgumentNullException>(() => CallerExpression.EnsureArgumentIsNotNull(personX.Address));
         output.WriteLine(ex.Message);
     }

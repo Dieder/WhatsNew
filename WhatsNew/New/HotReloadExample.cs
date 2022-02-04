@@ -11,7 +11,8 @@ internal class HotReloadExample : IDisposable
         int iBugLoop = 1;
         while (bugged)
         {
-            bugged = FixMethod();
+            bugged = IsBugged();
+            
             await Task.Delay(2000);
             Console.WriteLine($"Executed method looped {iBugLoop++} times.");      
             
@@ -22,7 +23,7 @@ internal class HotReloadExample : IDisposable
         }
     }
 
-    public bool FixMethod()
+    public bool IsBugged()
     {
         return true;
     }
