@@ -21,7 +21,7 @@ public class InterfaceImplementsTests
         foreach (var person in entranceCheckList)
         {
             var totalDiscount = string.Format("{0:p}", person.GetDiscount());
-            output.WriteLine(person.FullName + $" has got a discount of {totalDiscount}%.");
+            output.WriteLine(person.FullName + $" has got a discount of {totalDiscount}.");
         }
     }
 }
