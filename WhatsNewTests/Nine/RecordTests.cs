@@ -1,4 +1,6 @@
-﻿namespace TestProject1.Nine;
+﻿using Xunit.Abstractions;
+
+namespace TestProject1.Nine;
 
 public class RecordTests
 {

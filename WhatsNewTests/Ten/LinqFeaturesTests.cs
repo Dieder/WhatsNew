@@ -4,7 +4,7 @@ using Xunit.Abstractions;
 
 namespace WhantsNewTests.Ten;
 
-public class LinqFeatures
+public class LinqFeaturesTests
 {
     private string[] pizaSizes = new string[] { "Small", "Medium", "Large", "Extra Large" };
     private int[] pizzaSlices = new int[] { 4, 8, 12, 20 };
@@ -23,7 +23,7 @@ public class LinqFeatures
 
     private readonly TestOutput output;
 
-    public LinqFeatures(ITestOutputHelper outputHelper)
+    public LinqFeaturesTests(ITestOutputHelper outputHelper)
     {
         output = new TestOutput(outputHelper);
     }

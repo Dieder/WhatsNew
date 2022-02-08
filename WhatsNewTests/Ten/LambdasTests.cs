@@ -1,6 +1,6 @@
 namespace TestProject1
 {
-    public class TestLambdas
+    public class LambdasTests
     {
         [Fact]
         public void Test()
